@@ -17,7 +17,7 @@ export function Login({
 }: React.ComponentPropsWithoutRef<'div'>) {
 	return (
 		<div className={cn('flex flex-col gap-6', className)} {...props}>
-			<Card className="h-[844px] flex flex-col justify-center gap-6 bg-background w-[383px] rounded-[4px]">
+			<Card className="h-[844px] flex flex-col pt-[120px]  gap-6 bg-background w-[383px] rounded-[4px]">
 				<CardHeader>
 					<CardTitle className="text-2xl">Login</CardTitle>
 					<CardDescription>

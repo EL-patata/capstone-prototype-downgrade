@@ -22,7 +22,7 @@ export default function HomeChart({
 			<Card>
 				<CardContent
 					className={cn(
-						'pt-4 rounded-xl  text-gray-100 bg-gradient-to-br from-[50%] to-[55%] items-center',
+						'pt-4 rounded-xl  text-gray-100 bg-gradient-to-br from-[50%] to-[50%] items-center',
 						variant === 'red' && 'from-rose-600  to-rose-600/90',
 						variant === 'yellow' && 'from-amber-400 to-amber-400/90',
 						variant === 'green' && 'from-emerald-500  to-emerald-500/90 '
@@ -51,7 +51,7 @@ export default function HomeChart({
 			<RadialChart variant={variant} reading={reading} />
 
 			<div className="grid grid-cols-2 gap-2">
-				<Card>
+				<Card className="">
 					<CardHeader className="font-bold flex text-xl px-6 py-3">
 						<p>
 							PM<sub>10</sub>

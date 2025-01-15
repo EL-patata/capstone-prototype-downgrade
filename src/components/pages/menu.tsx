@@ -11,7 +11,7 @@ export default function Menu({
 	return (
 		<Card
 			className={cn(
-				'w-full max-w-sm h-[844px] bg-background relative',
+				'w-full max-w-sm h-[844px] rounded-[4px] bg-background relative',
 				className
 			)}
 		>
@@ -19,7 +19,7 @@ export default function Menu({
 				<X className="w-16" />
 			</CardHeader>
 			<CardContent>
-				<div className="min-h-[650px] flex flex-col gap-2 items-start">
+				<div className="min-h-[650px] flex  flex-col gap-2 items-start">
 					<Button
 						size={'lg'}
 						variant={'ghost'}

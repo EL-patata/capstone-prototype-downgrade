@@ -16,7 +16,7 @@ import { Textarea } from '../ui/textarea';
 export function RegisterForm() {
 	return (
 		<div className={cn('flex flex-col gap-6 ')}>
-			<Card className="h-[844px] w-[383px] rounded-[4px] flex flex-col justify-center gap-6 bg-background">
+			<Card className="h-[844px] w-[383px] rounded-[4px] flex flex-col pt-[120px] gap-6 bg-background">
 				<CardHeader>
 					<CardTitle className="text-2xl">Welcome John Doe</CardTitle>
 					<CardDescription>

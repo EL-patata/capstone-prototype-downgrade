@@ -57,7 +57,7 @@ export function BarChartCustom() {
 							cursor={false}
 							content={<ChartTooltipContent hideLabel />}
 						/>
-						<Bar dataKey="desktop" radius={8}></Bar>
+						<Bar dataKey="desktop" radius={4}></Bar>
 					</BarChart>
 				</ChartContainer>
 			</CardContent>
