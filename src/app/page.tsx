@@ -5,6 +5,7 @@ import ChatBot from '@/components/pages/chat-bot';
 import Forecast from '@/components/pages/forecast';
 import { Login } from '@/components/pages/login';
 import Menu from '@/components/pages/menu';
+import Profile from '@/components/pages/profile';
 import { RegisterForm } from '@/components/pages/register-form';
 import { SignIn } from '@/components/pages/signin';
 
@@ -47,7 +48,7 @@ export default function page() {
 
 					<Menu />
 
-					<PhoneWrapper>
+					<PhoneWrapper active="chat">
 						<ChatBot />
 					</PhoneWrapper>
 
@@ -66,6 +67,8 @@ export default function page() {
 					<NotificationExample />
 
 					<Forecast />
+
+					<Profile />
 				</div>
 			</div>
 

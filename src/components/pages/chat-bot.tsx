@@ -32,7 +32,7 @@ export default function ChatBot() {
 	]);
 
 	return (
-		<div className="w-full max-w-md mx-auto h-[650px] my-2 flex flex-col">
+		<div className="w-full max-w-md mx-auto h-[650px]  flex flex-col">
 			<div className="max-h-[550px] pr-2 py-2 overflow-hidden">
 				{messages.map((message, index) => (
 					<div

@@ -1,7 +1,7 @@
 import { cn } from '@/lib/utils';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import { RadialChart } from './radial-chart';
-import { Angry, Annoyed, Smile } from 'lucide-react';
+import { Angry, Annoyed, Cloud, Smile } from 'lucide-react';
 
 type Props = {
 	variant: 'green' | 'yellow' | 'red';
@@ -22,25 +22,28 @@ export default function HomeChart({
 			<Card>
 				<CardContent
 					className={cn(
-						'pt-4 rounded-xl  text-gray-100 bg-gradient-to-br from-[50%] to-[50%] items-center',
-						variant === 'red' && 'from-rose-600  to-rose-600/90',
-						variant === 'yellow' && 'from-amber-400 to-amber-400/90',
-						variant === 'green' && 'from-emerald-500  to-emerald-500/90 '
+						'pt-4 rounded-lg text-gray-200',
+						variant === 'red' && 'bg-rose-600 ',
+						variant === 'yellow' && 'bg-yellow-500 ',
+						variant === 'green' && 'bg-emerald-500 '
 					)}
 				>
-					<p className="font-bold text-lg">Area 1</p>
+					<p className="font-bold text-lg flex items-center justify-between pb-3">
+						<span>Area 1</span>
+						<Cloud className={cn('w-8 h-8')} />
+					</p>
 					<div className="flex gap-2 items-center">
 						<p className="font-semibold">Quality:</p>
 						{variant === 'green' ? (
-							<div className="flex gap-[4px] items-center">
+							<div className="flex gap-[4px] items-center ">
 								Good <Smile />
 							</div>
 						) : variant === 'yellow' ? (
-							<div className="flex gap-[4px] items-center">
+							<div className="flex gap-[4px] items-center ">
 								Moderate <Annoyed />
 							</div>
 						) : (
-							<div className="flex gap-[4px] items-center">
+							<div className="flex gap-[4px] items-center ">
 								Bad <Angry />
 							</div>
 						)}

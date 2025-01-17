@@ -8,22 +8,7 @@ export function ThemeProvider({
 	...props
 }: React.ComponentProps<typeof NextThemesProvider>) {
 	return (
-		<NextThemesProvider
-			{...props}
-			themes={[
-				'zinc',
-				'dark-zinc',
-
-				'indigo',
-				'dark-indigo',
-
-				'zinc-blue',
-				'dark-zinc-blue',
-
-				'slate-blue',
-				'dark-slate-blue',
-			]}
-		>
+		<NextThemesProvider {...props} themes={['light', 'dark']}>
 			{children}
 		</NextThemesProvider>
 	);

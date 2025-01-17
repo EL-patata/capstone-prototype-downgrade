@@ -1,6 +1,6 @@
 'use client';
 
-import { Check } from 'lucide-react';
+import { Check, Moon, Sun } from 'lucide-react';
 import { useTheme } from 'next-themes';
 import { Button } from '../ui/button';
 
@@ -8,17 +8,8 @@ export function ThemeToggle() {
 	const { theme, setTheme } = useTheme();
 
 	const themes = [
-		{ title: 'zinc', theme: 'zinc' },
-		{ title: 'dark zinc', theme: 'dark-zinc' },
-
-		{ title: 'indigo', theme: 'indigo' },
-		{ title: 'dark indigo', theme: 'dark-indigo' },
-
-		{ title: 'blue/zinc', theme: 'zinc-blue' },
-		{ title: 'blue/zinc dark', theme: 'dark-zinc-blue' },
-
-		{ title: 'blue/slate', theme: 'slate-blue' },
-		{ title: 'blue/slate dark', theme: 'dark-slate-blue' },
+		{ title: 'Light', theme: 'light', icon: <Sun /> },
+		{ title: 'Dark', theme: 'dark', icon: <Moon /> },
 	];
 
 	return (
@@ -34,6 +25,7 @@ export function ThemeToggle() {
 						});
 					}}
 				>
+					{button.icon}
 					{button.title}{' '}
 					{button.theme === theme ? (
 						<Check className="text-emerald-500" />

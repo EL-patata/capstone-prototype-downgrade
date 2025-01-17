@@ -1,5 +1,5 @@
 import { cn } from '@/lib/utils';
-import { Annoyed } from 'lucide-react';
+import { Annoyed, Cloud } from 'lucide-react';
 import { BarChartCustom } from '../custom/bar-chart';
 import PhoneWrapper from '../custom/phone-wrapper';
 import { Card, CardContent, CardHeader } from '../ui/card';
@@ -11,14 +11,16 @@ export default function Forecast() {
 				<Card>
 					<CardContent
 						className={cn(
-							'pt-4 rounded-xl  text-gray-100 bg-gradient-to-br from-[50%] to-[55%] items-center',
-							'from-amber-400 to-amber-400/90'
+							'pt-4 rounded-xl bg-gradient-to-br bg-amber-500 text-gray-100'
 						)}
 					>
-						<p className="font-bold text-lg">Area 1</p>
+						<p className="font-bold text-lg flex items-center justify-between pb-3">
+							<span>Area 1</span>
+							<Cloud className="w-8 h-8 " />
+						</p>
 						<div className="flex gap-2 items-center">
 							<p className="font-semibold">Quality:</p>
-							<div className="flex gap-[4px] items-center">
+							<div className="flex gap-[4px] items-center ">
 								Moderate <Annoyed />
 							</div>
 						</div>
