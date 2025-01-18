@@ -39,7 +39,7 @@ export default function page() {
 	return (
 		<div>
 			<div className="flex min-h-svh w-full justify-center p-6 md:p-10">
-				<div className="grid grid-cols-2 gap-3 w-[calc(383px * 2)] place-items-center mx-auto bg-slate-100 p-4 rounded">
+				<div className="grid grid-cols-2 gap-3 w-[calc(383px * 2)] place-items-center mx-auto bg-white p-4 rounded">
 					<Login />
 
 					<SignIn />
