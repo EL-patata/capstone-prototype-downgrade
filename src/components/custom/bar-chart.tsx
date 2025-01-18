@@ -16,7 +16,10 @@ import {
 	ChartTooltip,
 	ChartTooltipContent,
 } from '@/components/ui/chart';
+import { ClassValue } from 'clsx';
+import { cn } from '@/lib/utils';
 const chartData = [
+	{ month: '8', desktop: 90, fill: '#10b981' },
 	{ month: '9', desktop: 186, fill: '#10b981' },
 	{ month: '10', desktop: 305, fill: '#fbbf24' },
 	{ month: '11', desktop: 73, fill: '#10b981' },
@@ -35,12 +38,12 @@ const chartConfig = {
 	},
 } satisfies ChartConfig;
 
-export function BarChartCustom() {
+export function BarChartCustom({ className }: { className?: ClassValue }) {
 	return (
-		<Card>
+		<Card className={cn(className)}>
 			<CardHeader>
 				<CardTitle>Forecast</CardTitle>
-				<CardDescription>9 AM - 5 PM</CardDescription>
+				<CardDescription>8 AM - 5 PM</CardDescription>
 			</CardHeader>
 			<CardContent>
 				<ChartContainer config={chartConfig}>

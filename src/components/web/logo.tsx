@@ -20,7 +20,7 @@ export function TeamSwitcher() {
 						<LayoutDashboard className="size-8 p-1 rounded-lg bg-gradient-to-br from-primary via-blue-500 to-sky-500 text-white" />
 					</div>
 					<div className="grid flex-1 text-left text-sm leading-tight">
-						<span className="truncate font-bold text-lg">Dashboard</span>
+						<span className="truncate font-semibold text-3xl">Dashboard</span>
 					</div>
 				</SidebarMenuButton>
 			</SidebarMenuItem>

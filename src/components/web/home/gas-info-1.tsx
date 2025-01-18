@@ -8,7 +8,7 @@ import {
 	RadialBarChart,
 } from 'recharts';
 
-export default function TopSecondCard() {
+export default function GasInfo1() {
 	const chartData = [
 		{ browser: 'safari', visitors: 76, fill: 'var(--color-safari)' },
 	];
@@ -28,11 +28,11 @@ export default function TopSecondCard() {
 			<CardHeader>
 				<CardTitle className="font-bold">Gas info</CardTitle>
 			</CardHeader>
-			<CardContent className=" gap-2">
-				<div className="flex items-center gap-2">
+			<CardContent>
+				<div className="flex items-center gap-2 justify-between">
 					<ChartContainer
 						config={chartConfig}
-						className="mx-auto aspect-square max-h-[125px]"
+						className=" aspect-square h-[90px]"
 					>
 						<RadialBarChart
 							data={chartData}
@@ -63,14 +63,14 @@ export default function TopSecondCard() {
 													<tspan
 														x={viewBox.cx}
 														y={viewBox.cy}
-														className="fill-foreground text-xl font-bold"
+														className="fill-foreground text-lg font-bold"
 													>
 														{chartData[0].visitors.toLocaleString()}
 													</tspan>
 													<tspan
 														x={viewBox.cx}
 														y={(viewBox.cy || 0) + 12}
-														className="fill-muted-foreground text-xs"
+														className="fill-muted-foreground text-xs "
 													>
 														PM10
 													</tspan>
@@ -84,7 +84,7 @@ export default function TopSecondCard() {
 					</ChartContainer>
 					<ChartContainer
 						config={chartConfig}
-						className="mx-auto aspect-square max-h-[125px]"
+						className=" aspect-square h-[90px]"
 					>
 						<RadialBarChart
 							data={chartData}
@@ -115,7 +115,7 @@ export default function TopSecondCard() {
 													<tspan
 														x={viewBox.cx}
 														y={viewBox.cy}
-														className="fill-foreground text-xl font-bold"
+														className="fill-foreground text-lg font-bold"
 													>
 														{[chartData[0].visitors + 20].toLocaleString()}
 													</tspan>
@@ -136,7 +136,7 @@ export default function TopSecondCard() {
 					</ChartContainer>
 					<ChartContainer
 						config={chartConfig}
-						className="mx-auto aspect-square max-h-[125px]"
+						className=" aspect-square h-[90px]"
 					>
 						<RadialBarChart
 							data={chartData}
@@ -167,7 +167,7 @@ export default function TopSecondCard() {
 													<tspan
 														x={viewBox.cx}
 														y={viewBox.cy}
-														className="fill-foreground text-xl font-bold"
+														className="fill-foreground text-lg font-bold"
 													>
 														{(chartData[0].visitors + 12).toLocaleString()}
 													</tspan>
@@ -176,7 +176,7 @@ export default function TopSecondCard() {
 														y={(viewBox.cy || 0) + 12}
 														className="fill-muted-foreground text-xs"
 													>
-														CO<sub>2</sub>
+														CO2
 													</tspan>
 												</text>
 											);

@@ -1,7 +1,7 @@
 'use client';
 
 import { TrendingUp } from 'lucide-react';
-import { Area, AreaChart, CartesianGrid, XAxis } from 'recharts';
+import { Area, AreaChart, CartesianGrid, XAxis, YAxis } from 'recharts';
 
 import {
 	Card,
@@ -42,7 +42,7 @@ const chartConfig = {
 
 export function AreaChartExample() {
 	return (
-		<Card className="bg-background col-span-3 w-full">
+		<Card className="bg-background col-span-2 w-full">
 			<CardHeader>
 				<CardTitle className="text-lg font-bold">Today vs Yesterday</CardTitle>
 			</CardHeader>
@@ -63,6 +63,12 @@ export function AreaChartExample() {
 							axisLine={false}
 							tickMargin={8}
 							tickFormatter={(value) => value.slice(0, 3)}
+						/>
+						<YAxis
+							tickLine={false}
+							axisLine={false}
+							tickMargin={8}
+							tickCount={10}
 						/>
 						<ChartTooltip cursor={false} content={<ChartTooltipContent />} />
 						<defs>

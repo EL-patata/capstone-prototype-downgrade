@@ -23,7 +23,7 @@ export default function layout({ children }: Props) {
 		<SidebarProvider>
 			<LeftSidebar />
 			<SidebarInset>
-				<header className="flex h-16 sticky top-0 bg-background border border-b  items-center gap-2 ">
+				<header className="flex h-16 sticky z-[5000] top-0 bg-background border border-b  items-center gap-2 ">
 					<div className="flex items-center gap-2 px-4">
 						<SidebarTrigger className="-ml-1" />
 						<Separator orientation="vertical" className="mr-2 h-4" />
