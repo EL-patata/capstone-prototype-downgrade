@@ -40,9 +40,7 @@ export default function layout({ children }: Props) {
 						</Breadcrumb>
 					</div>
 				</header>
-				<main className="w-full bg-card min-h-[calc(100vh)] p-4">
-					{children}
-				</main>
+				<main className="w-full bg-card min-h-screen p-4">{children}</main>
 			</SidebarInset>
 		</SidebarProvider>
 	);

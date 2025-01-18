@@ -95,13 +95,13 @@ export function LeftSidebar({
 }: React.ComponentProps<typeof Sidebar>) {
 	return (
 		<Sidebar collapsible="icon" {...props}>
-			<SidebarHeader>
+			<SidebarHeader className="bg-background">
 				<TeamSwitcher />
 			</SidebarHeader>
-			<SidebarContent>
+			<SidebarContent className="bg-background">
 				<NavMain items={data.navMain} />
 			</SidebarContent>
-			<SidebarFooter>
+			<SidebarFooter className="bg-background">
 				<NavUser user={data.user} />
 			</SidebarFooter>
 			<SidebarRail />

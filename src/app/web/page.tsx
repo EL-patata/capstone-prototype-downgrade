@@ -9,7 +9,7 @@ import { Smile } from 'lucide-react';
 
 export default function Page() {
 	return (
-		<div className="w-full h-[calc(100vh-6rem)] flex flex-col lg:grid lg:grid-cols-8 gap-2">
+		<div className="w-full flex flex-col lg:grid lg:grid-cols-8 gap-2">
 			<div className="col-span-6 flex flex-col lg:grid gap-2 grid-cols-3 ">
 				<Card className="bg-background">
 					<CardHeader>
