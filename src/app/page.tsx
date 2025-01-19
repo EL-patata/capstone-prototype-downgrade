@@ -3,6 +3,7 @@ import PhoneWrapper from '@/components/custom/phone-wrapper';
 import NotificationExample from '@/components/example/notification';
 import ChatBot from '@/components/pages/chat-bot';
 import Forecast from '@/components/pages/forecast';
+import HeartbeatOxygen from '@/components/pages/heartbeat-oxygen';
 import { Login } from '@/components/pages/login';
 import Menu from '@/components/pages/menu';
 import Profile from '@/components/pages/profile';
@@ -67,6 +68,8 @@ export default function page() {
 					<NotificationExample />
 
 					<Forecast />
+
+					<HeartbeatOxygen />
 
 					<Profile />
 				</div>
