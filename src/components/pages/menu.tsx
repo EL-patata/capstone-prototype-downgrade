@@ -1,6 +1,15 @@
 import { cn } from '@/lib/utils';
 import { ClassValue } from 'clsx';
-import { Bot, Home, LogOut, Palette, PhoneCall, User, X } from 'lucide-react';
+import {
+	Bot,
+	HeartPulse,
+	Home,
+	LogOut,
+	Palette,
+	PhoneCall,
+	User,
+	X,
+} from 'lucide-react';
 import { PropsWithChildren } from 'react';
 import { Card, CardContent, CardHeader } from '../ui/card';
 import { Button } from '../ui/button';
@@ -26,6 +35,13 @@ export default function Menu({
 						className="text-lg font-semibold"
 					>
 						<Home /> Go to home screen
+					</Button>
+					<Button
+						size={'lg'}
+						variant={'ghost'}
+						className="text-lg font-semibold"
+					>
+						<HeartPulse /> Wearable device readings
 					</Button>
 					<Button
 						size={'lg'}

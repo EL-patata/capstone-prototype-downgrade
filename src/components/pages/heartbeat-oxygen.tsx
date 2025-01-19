@@ -1,7 +1,5 @@
 'use client';
 
-'use client';
-
 import {
 	Label,
 	PolarGrid,
@@ -20,8 +18,9 @@ import {
 } from '@/components/ui/card';
 import { ChartConfig, ChartContainer } from '@/components/ui/chart';
 
+import { Smile, User } from 'lucide-react';
 import PhoneWrapper from '../custom/phone-wrapper';
-import { Smile } from 'lucide-react';
+import { Button } from '../ui/button';
 
 export default function HeartbeatOxygen() {
 	return (
@@ -29,6 +28,10 @@ export default function HeartbeatOxygen() {
 			<div className="grid grid-cols-1 gap-3">
 				<Component />
 				<Component2 />
+				<Button>
+					<User />
+					Profile
+				</Button>
 			</div>
 		</PhoneWrapper>
 	);
