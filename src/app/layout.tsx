@@ -2,6 +2,7 @@ import Command from '@/components/config/command';
 import { ThemeProvider } from '@/components/config/theme-changer';
 import type { Metadata } from 'next';
 import './globals.css';
+import { Toaster } from '@/components/ui/toaster';
 
 export const metadata: Metadata = {
 	title:
@@ -28,6 +29,7 @@ export default function RootLayout({
 						<Command />
 						{children}
 					</main>
+					<Toaster />
 				</ThemeProvider>
 			</body>
 		</html>
